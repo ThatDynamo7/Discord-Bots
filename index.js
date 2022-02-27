@@ -1,3 +1,5 @@
+//Hey! This is a basic code for a working discord bot using Discord.js
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
