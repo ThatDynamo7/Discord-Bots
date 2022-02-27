@@ -20,6 +20,8 @@ client.on("message", message => {
     message.channel.send('cmd1 works!!!');
   } else if (message.content === 'cmd2') {
     message.channel.send('cmd2 works!!!');
+  } else if (message.content === 'reply cmd') {
+    message.reply('This is a reply!')
   }
 }
 
