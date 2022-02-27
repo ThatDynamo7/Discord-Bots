@@ -2,6 +2,7 @@
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const { MessageEmbed } = require("discord.js");
 
 
 //When the bot is online
@@ -20,6 +21,15 @@ client.on("message", message => {
     message.channel.send('cmd1 works!!!');
   } else if (message.content === 'cmd2') {
     message.channel.send('cmd2 works!!!');
+  } else if (message.content === 'embed') {
+    
+    let embed = new Discord.MessageEmbed()
+    .setTitle("Enter your title here!")
+    .setDescription("Enter your description here!")
+    .setFooter("Enter your footer here!")
+    .setTimestamp()
+    
+    message.channel.send(embed)
   }
 }
 
