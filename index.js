@@ -21,7 +21,7 @@ client.on("message", message => {
   } else if (message.content === 'cmd2') {
     message.channel.send('cmd2 works!!!');
   }
-}
+});
 
 
 //Bot Login
